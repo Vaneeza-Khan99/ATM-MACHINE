@@ -2,6 +2,8 @@
 
 import inquirer from "inquirer";
 
+console.log("Welcome to ATM Machine"); 
+
 let totalBalance = 20000;
 let mypin = 1234;
 
@@ -16,6 +18,7 @@ let pinAnswer = await inquirer.prompt(
 );
 if (pinAnswer.pin === mypin) {
     console.log("Correct pin code!!!");
+    console.log("your current balance is 20000");
 
     let operationAns  = await inquirer.prompt(
         [
